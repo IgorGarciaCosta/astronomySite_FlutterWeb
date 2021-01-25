@@ -1,21 +1,21 @@
+import 'package:astronomy_site/Views/Home/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:astronomy_site/views/home/home_view.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Astronomy',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomeView(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Astronomy',
+        theme: ThemeData(
+            primarySwatch: Colors.blue,
+            textTheme: Theme.of(context).textTheme.apply(
+                  fontFamily: 'Open Sans',
+                )),
+        home: HomeView());
   }
 }
