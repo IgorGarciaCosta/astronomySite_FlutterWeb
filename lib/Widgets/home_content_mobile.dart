@@ -1,4 +1,4 @@
-import 'package:astronomy_site/Widgets/NavigationBar/details/details.dart';
+import 'package:astronomy_site/Widgets/details/details.dart';
 import 'package:astronomy_site/Widgets/call_to_action/call_to_action.dart';
 import 'package:flutter/material.dart';
 
